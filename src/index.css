@@ -6,7 +6,7 @@
   --blue: #3a80e9;
   --grey: #888;
   --darkgrey: #1b1b1b;
-  --green: #61c965;
+  --green: #61c96f;
   --red: #f94141;
 }
 
@@ -60,4 +60,44 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--white) !important;
+}
+
+.top-btn {
+  padding: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--darkgrey);
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.grey-container {
+  width: 90%;
+  display: block;
+  background-color: var(--darkgrey);
+  margin: 0.5rem auto;
+  padding: 0rem 0.5rem;
+  border-radius: 0.8rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .top-btn {
+    right: 0.5rem;
+    bottom: 0.5rem;
+  }
+
+  .grey-container {
+    background-color: var(--darkgrey);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.8rem;
+  }
 }

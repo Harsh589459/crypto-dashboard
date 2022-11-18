@@ -27,15 +27,15 @@ function LandingIntro() {
                     className={"para"}
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.5, repeatType: "mirror" }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
                 >
                     Track crypto through a public api in real time. Visit the dashboard to
                     do so!
                 </motion.p>
                 <motion.div
                     className={"flexBtn"}
-                    initial={{ scale: 0, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
+                    initial={{ x: -5, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.75 }}
                 >
                     <Button text="Dashboard" />

@@ -11,4 +11,4 @@ function Button({ text, onClick, outlined }) {
     );
 }
 
-export default Button; 
+export default Button;
